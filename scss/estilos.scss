@@ -1,0 +1,312 @@
+$primary: white;
+$secondary: black;
+$primary-text-emphasis: green;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$color1: #EF6C26;
+$color2: white;
+$colorcito: rgb(1, 14, 49);
+$colorText: #6f7180;
+$TextColorActive: #149ddd;
+body
+{
+    .padre-alert
+    {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 5%;
+    }
+    #header
+    {
+        padding: 15px;
+        width: 300px;
+        height: 90vh;
+        .profile
+        {
+            img
+            {
+                margin: 15px auto;
+                display: block;
+                width: 120px;
+                border: 8px solid #2c2f3f;
+            }
+            h1
+            {
+                font-size: 24px;
+                margin: 0;
+                padding: 0;
+                font-weight: 600;
+                -moz-text-align-last: center;
+                text-align-last: center;
+                font-family: "Poppins", sans-serif;
+                a
+                {
+                    text-decoration: none;
+                }
+            }
+            .cv
+            {
+                padding: 15px 0;
+                button
+                {
+                    font-size: 12px;
+                }
+            }
+        }
+        ul.nav
+        {
+            padding: 10px 0 0 0;
+            li.icon
+            {
+                a
+                {
+                    display: flex;
+                    padding: 12px 15px;
+                    margin-bottom: 8px;
+                    transition: 0.3s;
+                    font-size: 15px;
+                    align-items: center;
+                    color: $colorText;
+                    i
+                    {
+                        font-size: 24px;
+                        padding-right: 8px;
+                    }
+                }
+                a:hover
+                {
+                    color: white;
+                    i
+                    {
+                        color: $TextColorActive;
+                    }
+                }
+            }
+        }
+    }
+    section.principal
+    {
+        .fondo
+        {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(../img/banner.webp);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        div.datos
+        {
+            h1
+            {
+                margin: 0 0 10px 0;
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 56px;
+                color: $primary;
+            }
+            .tipeo
+            {
+                color: $primary;
+                margin-bottom: 50px;
+                font-size: 26px;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+    }
+    section.main
+    {
+        margin-left: 300px;
+        height: 100vh;
+        background-color: $color2;
+        section
+        {
+            padding: 30px 0;
+            .titulo
+            {
+                h2
+                {
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    position: relative;
+                    color: #173b6c;
+                }
+            }
+            .container
+            {
+                padding: 0 30px;
+                .proyectos
+                {
+                    .col
+                    {
+                        padding: 0 10px;
+
+                        .card
+                        {
+                            padding: 0;
+                            .card-body
+                            {
+                                .card-text
+                                {
+                                    margin-bottom: 60px;
+                                }
+                                .botones
+                                {
+                                    position: absolute;
+                                    bottom: 60px;
+                                    left: 0;
+                                    margin: 0;
+                                }
+                            }
+                            .bx
+                            {
+                                font-size: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section#Habilidades
+        {
+            background-color: #f5f8fd;
+            .container
+            {
+                padding-top: 1%;
+            }
+            .section-skill
+            {
+                padding-top: 1%;
+                .col
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    .skills
+                    {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .box-skill
+                        {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
+                        .bx
+                        {
+                            font-size: 80px;
+                            padding: 10px;
+                        }
+                        img
+                        {
+                            width: 90px;
+                            height: 90px;
+                            padding: 10px;
+                        }
+                        .mysql
+                        {
+                            width: 180px;
+                        }
+                        .bxl-php
+                        {
+                            font-size: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        section#Contacto
+        {
+            background-color: #f5f8fd;
+            .formulario
+            {
+                background-color: white;
+            }
+        }
+    }
+
+    .bxl-wordpress
+    {
+        color: #00749C;
+    }
+    .bxl-html5
+    {
+        color: #e34c26;
+    }
+    .bxl-css3
+    {
+        color: #264de4;
+    }
+    .bxl-javascript
+    {
+        color: #f0db4f;
+    }
+    .bxl-bootstrap
+    {
+        color: #563d7c;
+    }
+    .bxl-sass
+    {
+        color: #cc6699;
+    }
+    .bxl-less
+    {
+        font-size: 40px;
+        color: #0d52aa;
+    }
+    .bxl-visual-studio
+    {
+        color: #0078d7;
+    }
+    .bxl-git
+    {
+        color: #F1502F;
+    }
+    .bxl-php
+    {
+        color: #8993be;
+    }
+    .bxl-nodejs
+    {
+        color: #68a063;
+    }
+    #footer
+    {
+        padding: 0 15px;
+        width: 300px;
+        height: 10vh;
+        div.container
+        {
+            display: flex;
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            transition: 0.3s;
+            font-size: 15px;
+            align-items: center;
+            color: $colorText;
+            i
+            {
+                font-size: 24px;
+                padding-right: 8px;
+            }
+        }
+        div.container:hover
+        {
+            span
+            {
+                color: white;
+            }
+            i
+            {
+                color: $TextColorActive;
+            }
+        }
+    }
+}
