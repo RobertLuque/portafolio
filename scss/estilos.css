@@ -11965,6 +11965,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body .container .titulo {
+  padding-top: 20px;
+}
 body .padre-alert {
   position: absolute;
   display: flex;
@@ -12016,10 +12019,10 @@ body #header ul.nav li.icon a i {
   font-size: 24px;
   padding-right: 8px;
 }
-body #header ul.nav li.icon a:hover {
+body #header ul.nav li.icon a:hover, body #header ul.nav li.icon a.active {
   color: white;
 }
-body #header ul.nav li.icon a:hover i {
+body #header ul.nav li.icon a:hover i, body #header ul.nav li.icon a.active i {
   color: #149ddd;
 }
 body section.principal .fondo {
@@ -12047,35 +12050,40 @@ body section.main {
   height: 100vh;
   background-color: white;
 }
-body section.main section {
+body section.main section#Portfolio {
   padding: 30px 0;
 }
-body section.main section .titulo h2, body section.main section .titulo .h2 {
+body section.main section#Portfolio .titulo h2, body section.main section#Portfolio .titulo .h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   position: relative;
   color: #173b6c;
 }
-body section.main section .container {
+body section.main section#Portfolio .container {
+  overflow-x: hidden;
   padding: 0 30px;
 }
-body section.main section .container .proyectos .col {
+body section.main section#Portfolio .container .proyectos {
+  width: 100%;
+  min-height: 300px;
+}
+body section.main section#Portfolio .container .proyectos .swiper-slide {
   padding: 0 10px;
 }
-body section.main section .container .proyectos .col .card {
+body section.main section#Portfolio .container .proyectos .swiper-slide .card {
   padding: 0;
 }
-body section.main section .container .proyectos .col .card .card-body .card-text {
+body section.main section#Portfolio .container .proyectos .swiper-slide .card .card-body .card-text {
   margin-bottom: 60px;
 }
-body section.main section .container .proyectos .col .card .card-body .botones {
+body section.main section#Portfolio .container .proyectos .swiper-slide .card .card-body .botones {
   position: absolute;
   bottom: 60px;
   left: 0;
   margin: 0;
 }
-body section.main section .container .proyectos .col .card .bx {
+body section.main section#Portfolio .container .proyectos .swiper-slide .card .icon.bx {
   font-size: 30px;
   display: flex;
   justify-content: center;

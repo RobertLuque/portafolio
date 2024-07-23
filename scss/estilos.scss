@@ -10,6 +10,13 @@ $colorText: #6f7180;
 $TextColorActive: #149ddd;
 body
 {
+    .container
+    {
+        .titulo
+        {
+            padding-top: 20px;
+        }
+    }
     .padre-alert
     {
         position: absolute;
@@ -74,7 +81,7 @@ body
                         padding-right: 8px;
                     }
                 }
-                a:hover
+                a:hover, a.active
                 {
                     color: white;
                     i
@@ -119,7 +126,7 @@ body
         margin-left: 300px;
         height: 100vh;
         background-color: $color2;
-        section
+        section#Portfolio
         {
             padding: 30px 0;
             .titulo
@@ -135,10 +142,13 @@ body
             }
             .container
             {
+                overflow-x: hidden;
                 padding: 0 30px;
                 .proyectos
                 {
-                    .col
+                    width: 100%;
+                    min-height: 300px;
+                    .swiper-slide
                     {
                         padding: 0 10px;
 
@@ -159,7 +169,7 @@ body
                                     margin: 0;
                                 }
                             }
-                            .bx
+                            .icon.bx
                             {
                                 font-size: 30px;
                                 display: flex;

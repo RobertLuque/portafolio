@@ -18,7 +18,7 @@ function sendMail($subject, $body, $email, $name, $html = false){
     $phpmailer->Password = 'ijkgqqjaldnpehuv';
 
     //Añadiendo destinatarios
-    $phpmailer->setFrom('contact@miempresa.com', 'Mi empresa');
+    $phpmailer->setFrom('robertvengador1@gmail.com', 'Luque Torres Robert');
     $phpmailer->addAddress($email, $name);
 
      //Definiendo el contenido de mi email

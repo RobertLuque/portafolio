@@ -36,6 +36,7 @@ if(isset($_POST["form"])){
     <link rel="stylesheet" href="scss/estilos.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body class="bg-primary">
@@ -99,22 +100,22 @@ if(isset($_POST["form"])){
             </li>
         </ul>
     </header>
-    <section class="principal d-flex justify-content-center align-items-center">
-        <div class="fondo"></div>
-        <div class="datos position-absolute" id="caja-texto">
-            <h1>Robert Luque</h1>
-            <span id="typed"></span>
-        </div>
-    </section>
-    <section class="main ">
+    <section class="main">
+        <section class="principal d-flex justify-content-center align-items-center">
+            <div class="fondo"></div>
+            <div class="datos position-absolute" id="caja-texto">
+                <h1>Robert Luque</h1>
+                <span id="typed"></span>
+            </div>
+        </section>
         <section id="Portfolio">
             <div class="container">
                 <div class="titulo">
                     <h2>Proyectos</h2>
                 </div>
-                <div class="proyectos">
-                    <div class="row d-flex row-cols-md-3 g-5">
-                        <div class="col">
+                <div class="proyectos swiper swiper-proyectos">
+                    <div class="swiper-wrapper swiper-contenido-proyectos">
+                        <div class="swiper-slide">
                             <div class="card h-100">
                                 <img src="img/proyecto_osifersac.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -123,20 +124,20 @@ if(isset($_POST["form"])){
                                         utilizando WordPress. Se trata de un ecommerce de una ferretería, con un sistema
                                         integrado de cotización.</p>
                                     <div class="botones row w-100">
-                                        <a href="https://osifersac.com/"
-                                            class="col btn btn-outline-info mx-3">Pagina</a>
+                                        <a href="https://osifersac.com/" class="col btn btn-outline-info mx-3"
+                                            target="_blank">Pagina</a>
                                         <a href="#" class="col btn btn-outline-info mx-3">ver mas</a>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex row-cols-4">
-                                    <i class='bx bxl-wordpress'></i>
-                                    <i class='bx bxl-html5'></i>
-                                    <i class='bx bxl-css3'></i>
-                                    <i class='bx bxl-javascript'></i>
+                                    <i class='icon bx bxl-wordpress'></i>
+                                    <i class='icon bx bxl-html5'></i>
+                                    <i class='icon bx bxl-css3'></i>
+                                    <i class='icon bx bxl-javascript'></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="swiper-slide">
                             <div class="card h-100">
                                 <img src="img/proyecto_ledcolombia.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -147,20 +148,20 @@ if(isset($_POST["form"])){
                                         opciones seleccionadas mediante URLs.</p>
                                     <div class="botones row w-100">
                                         <a href="https://ledcolombia.com.co/producto/personalizacion-de-letras-led/"
-                                            class="col btn btn-outline-info mx-3">Pagina</a>
+                                            class="col btn btn-outline-info mx-3" target="_blank">Pagina</a>
                                         <a href="#" class="col btn btn-outline-info mx-3">ver mas</a>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex row-cols-4">
-                                    <i class='bx bxl-wordpress'></i>
-                                    <i class='bx bxl-html5'></i>
-                                    <i class='bx bxl-css3'></i>
-                                    <i class='bx bxl-javascript'></i>
+                                    <i class='icon bx bxl-wordpress'></i>
+                                    <i class='icon bx bxl-html5'></i>
+                                    <i class='icon bx bxl-css3'></i>
+                                    <i class='icon bx bxl-javascript'></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="swiper-slide">
                             <div class="card h-100">
                                 <img src="img/robertportafoleo.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -172,23 +173,24 @@ if(isset($_POST["form"])){
                                         navegar.</p>
                                     <div class="botones row w-100">
                                         <a href="#" class="col btn btn-outline-info mx-3">Pagina</a>
-                                        <a href="#" class="col btn btn-outline-dark">
+                                        <a href="https://github.com/RobertLuque/portafolio"
+                                            class="col btn btn-outline-dark" target="_blank">
                                             <i class='bx bxl-github'></i>
                                         </a>
                                         <a href="#" class="col btn btn-outline-info mx-3">ver mas</a>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex row-cols-6">
-                                    <i class='bx bxl-html5'></i>
-                                    <i class='bx bxl-css3'></i>
-                                    <i class='bx bxl-javascript'></i>
-                                    <i class='bx bxl-bootstrap'></i>
-                                    <i class='bx bxl-sass'></i>
-                                    <i class='bx bxl-php'></i>
+                                    <i class='icon bx bxl-html5'></i>
+                                    <i class='icon bx bxl-css3'></i>
+                                    <i class='icon bx bxl-javascript'></i>
+                                    <i class='icon bx bxl-bootstrap'></i>
+                                    <i class='icon bx bxl-sass'></i>
+                                    <i class='icon bx bxl-php'></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="swiper-slide">
                             <div class="card h-100">
                                 <img src="img/proyecto_pizzerialagula.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -197,23 +199,26 @@ if(isset($_POST["form"])){
                                         habilidades en JavaScript con elementos interactivos.</p>
                                     <div class="botones row w-100">
                                         <a href="https://robertluque.github.io/PizzeriaLaGula/"
-                                            class="col btn btn-outline-info mx-3">Pagina</a>
+                                            class="col btn btn-outline-info mx-3" target="_blank">Pagina</a>
                                         <a href="https://github.com/RobertLuque/PizzeriaLaGula"
-                                            class="col btn btn-outline-dark">
+                                            class="col btn btn-outline-dark" target="_blank">
                                             <i class='bx bxl-github'></i>
                                         </a>
                                         <a href="#" class="col btn btn-outline-info mx-3">ver mas</a>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex row-cols-4">
-                                    <i class='bx bxl-html5'></i>
-                                    <i class='bx bxl-css3'></i>
-                                    <i class='bx bxl-javascript'></i>
-                                    <i class='bx bxl-less'></i>
+                                    <i class='icon bx bxl-html5'></i>
+                                    <i class='icon bx bxl-css3'></i>
+                                    <i class='icon bx bxl-javascript'></i>
+                                    <i class='icon bx bxl-less'></i>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Feclas navegacion -->
+                    <div class="swiper-button-prev swiper-button-prev-proyectos"></div>
+                    <div class="swiper-button-next swiper-button-next-proyectos"></div>
                 </div>
             </div>
         </section>
@@ -399,13 +404,17 @@ if(isset($_POST["form"])){
         class="sticky-bottom position-fixed bg-secondary d-flex align-content-center align-items-center">
         <div class="container">
             <i class='bx bxl-gmail'></i>
-            <span>rluquetorres2021@gmail.com</span>
+            <span id="correo-copy" onclick="copiarAlPortapapeles()">rluquetorres2021@gmail.com</span>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/activeMenuScroll.js"></script>
+    <script src="js/sliderProyectos.js"></script>
     <script src="js/eliminateAlert.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/validForm.js"></script>
+    <script src="js/copy.js"></script>
 </body>
 
 </html>
